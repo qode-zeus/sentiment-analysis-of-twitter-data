@@ -21,3 +21,5 @@ auth = OAuthHandler(ckey,csecret)
 auth.set_access_token(atoken,asecret)
 TwitterStream = Stream(auth,listener())
 TwitterStream.filter(track=["hacker"])	
+
+# use this command to load all your tweets into a file "python tweet_collector.py > filename.json"
